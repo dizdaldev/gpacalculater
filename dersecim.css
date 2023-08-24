@@ -150,12 +150,12 @@ button:hover {
 }
 
 /* Responsive Styles */
-/* Responsive Styles */
+
+
 @media screen and (max-width: 600px) {
   header h1 {
-    font-size: 1.6rem; /* Adjust font size */
+    font-size: 1.8rem;
   }
-
   main {
     min-height: calc(100vh - 120px); /* Adjust the subtraction value as needed */
   }
@@ -165,6 +165,13 @@ button:hover {
     border-radius: 8px;
   }
 
-  /* ... (other styles) */
+  label, select, input, button {
+    padding: 10px;
+  }
+
+  .summary {
+    padding: 12px;
+  }
+}
 }
 
