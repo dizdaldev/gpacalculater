@@ -160,3 +160,22 @@ footer {
   font-size: 0.8rem;
   color: #888;
 }
+
+
+
+
+/* Other style codes */
+
+.credit-container {
+  text-align: center;
+  background-color: #f7f9fc;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.credit {
+  font-size: 0.8rem;
+  color: #888;
+}
