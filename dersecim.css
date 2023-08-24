@@ -8,11 +8,13 @@
 
 /* Diğer stil kodları */
 
+/* Other style codes */
+
 footer {
   text-align: center;
   padding: 10px 0;
   background-color: #f7f9fc;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -21,6 +23,7 @@ footer {
   font-size: 0.8rem;
   color: #888;
 }
+
 
 body {
   font-family: 'Arial', sans-serif;
