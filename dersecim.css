@@ -6,13 +6,18 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f7f9fc;
+  color: #333;
 }
 
 header {
   text-align: center;
-  margin: 20px 0;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2rem;
   color: #ff5722;
 }
 
@@ -24,12 +29,11 @@ main {
 }
 
 .calculator {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -37,16 +41,24 @@ label, select, input, button {
   display: block;
   margin-bottom: 15px;
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f7f9fc;
+  color: #333;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+label, select {
+  cursor: pointer;
 }
 
 button {
   background-color: #ff5722;
   color: #fff;
-  border: none;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -60,6 +72,7 @@ button:hover {
   background: none;
   border: none;
   cursor: pointer;
+  font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
@@ -70,20 +83,32 @@ button:hover {
 .reset-button {
   background-color: #607d8b;
   color: #fff;
+  font-weight: bold;
 }
 
 #result {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 1.2rem;
 }
 
 .summary {
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   margin-top: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.summary h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.summary p {
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 
 @keyframes fade-in {
@@ -99,4 +124,24 @@ button:hover {
 
 .fade-in {
   animation: fade-in 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .calculator {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  label, select, input, button {
+    padding: 10px;
+  }
+
+  .summary {
+    padding: 12px;
+  }
 }
