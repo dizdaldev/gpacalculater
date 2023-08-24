@@ -43,11 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
     creditsInput.value = "";
     recalculateGPA();
     animateElement(li, "fade-in");
-  });
-
-  calculateButton.addEventListener("click", () => {
+    
+    // Move isWeighted assignment here
     isWeighted = weightedCheckbox.checked;
-    recalculateGPA();
   });
 
   resetButton.addEventListener("click", () => {
