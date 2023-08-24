@@ -51,6 +51,10 @@ label, select, input, button {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+label, select {
+  cursor: pointer;
+}
+
 button {
   background-color: #ff5722;
   color: #fff;
@@ -125,11 +129,7 @@ button:hover {
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
   header h1 {
-    font-size: 1.6rem;
-  }
-
-  main {
-    min-height: calc(100vh - 120px);
+    font-size: 1.8rem;
   }
 
   .calculator {
@@ -140,4 +140,23 @@ button:hover {
   label, select, input, button {
     padding: 10px;
   }
+
+  .summary {
+    padding: 12px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f7f9fc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.credit {
+  font-size: 0.8rem;
+  color: #888;
 }
