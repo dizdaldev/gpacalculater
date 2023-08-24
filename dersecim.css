@@ -40,6 +40,12 @@ main {
   text-align: center;
 }
 
+.calculator h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
 label, select, input, button {
   display: block;
   margin-bottom: 15px;
@@ -156,6 +162,10 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     width: 100%;
+  }
+
+  .calculator h2 {
+    font-size: 1.2rem;
   }
 
   label, select, input, button {
