@@ -1,5 +1,9 @@
 /* Reset default styles */
 * {
+  outline: 1px solid red; /* This will add a red outline to all elements */
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
