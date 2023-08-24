@@ -138,4 +138,16 @@ button:hover {
 /* Rest of your existing CSS */
 
 /* Rest of your existing CSS */
+/* Update button styles to use orange and white */
+button {
+  background-color: #ff5722;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
 
+button:hover {
+  background-color: #e64a19;
+}
+
+/* Rest of your existing CSS */
