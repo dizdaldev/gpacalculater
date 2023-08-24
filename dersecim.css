@@ -84,3 +84,35 @@ button {
 .fade-in {
   animation: fade-in 0.5s ease-in-out;
 }
+
+/* Mobile-first responsive styles */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .calculator {
+    padding: 10px; /* Decrease padding for smaller screens */
+    max-width: 100%; /* Allow calculator to take full width */
+  }
+
+  label, select, input, button {
+    margin-bottom: 8px; /* Reduce margin for better spacing */
+  }
+
+  button {
+    padding: 6px 12px; /* Adjust button padding */
+  }
+}
+
+/* Larger screens */
+@media screen and (min-width: 601px) {
+  body {
+    font-size: 16px; /* Reset font size for larger screens */
+  }
+
+  .calculator {
+    padding: 20px; /* Restore padding for larger screens */
+  }
+}
+
