@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+  color: #ff5722;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+label, select, input, button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-course {
+  color: #dc3545;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.remove-course:hover {
+  text-decoration: underline;
+}
+
+.reset-button {
+  background-color: #607d8b;
+  color: #fff;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.summary {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
