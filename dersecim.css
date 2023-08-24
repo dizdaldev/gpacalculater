@@ -1,24 +1,28 @@
-* {
+/* Global Reset and Box Sizing */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f0f3f5;
   color: #333;
 }
 
 header {
   text-align: center;
-  padding: 20px 0;
-  background-color: #2c3e50;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #3498db, #e74c3c);
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
   color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -30,28 +34,29 @@ main {
 
 .calculator {
   background-color: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  width: 30rem;
   text-align: center;
 }
 
 .calculator h2 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
+/* Form Element Styles with Modern Twist */
 label, select, input, button {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   width: 100%;
-  padding: 15px;
+  padding: 1.2rem;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
   background-color: #f5f6f8;
-  color: #333;
+  color: #444;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
@@ -60,14 +65,15 @@ label {
   font-weight: bold;
 }
 
+/* Button Styles with Gradient Effect */
 button {
-  background-color: #2c3e50;
+  background: linear-gradient(135deg, #e74c3c, #ff5722);
   color: #fff;
   font-weight: bold;
 }
 
 button:hover {
-  background-color: #1d2938;
+  background: linear-gradient(135deg, #c0392b, #e64a19);
 }
 
 .remove-course {
@@ -85,69 +91,49 @@ button:hover {
 
 #result {
   font-weight: bold;
-  margin-top: 20px;
-  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
   color: #2c3e50;
 }
 
 .summary {
   background-color: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 30px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
+/* Responsive Styles for Smaller Screens */
 @media screen and (max-width: 600px) {
   header h1 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .calculator {
-    padding: 30px;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 0.8rem;
     width: 100%;
   }
 
   .calculator h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   label, select, input, button {
-    padding: 12px;
+    padding: 1rem;
     font-size: 0.9rem;
   }
 
   .summary {
-    padding: 15px;
+    padding: 1rem;
     font-size: 0.9rem;
   }
 }
 
-/* Adjust the logo size */
+/* Logo Styling */
 .logo {
-  max-height: 60px; /* Adjust this value as needed */
-  margin-right: 10px;
+  max-height: 3rem;
+  margin-right: 1rem;
 }
-
-/* Add this CSS for the footer */
-/* Add this CSS for the footer */
-
-
-/* Rest of your existing CSS */
-
-/* Rest of your existing CSS */
-/* Update button styles to use orange and white */
-button {
-  background-color: #ff5722;
-  color: #fff;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #e64a19;
-}
-
-/* Rest of your existing CSS */
