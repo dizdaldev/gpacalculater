@@ -155,10 +155,6 @@ button:hover {
     font-size: 1.8rem;
   }
 
-  .calculator {
-    padding: 15px;
-    border-radius: 8px;
-  }
 
   label, select, input, button {
     padding: 10px;
