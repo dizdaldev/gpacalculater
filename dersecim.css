@@ -1,7 +1,12 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background-color: #f7f9fc;
 }
 
@@ -21,8 +26,8 @@ main {
 .calculator {
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
   text-align: center;
@@ -30,27 +35,36 @@ main {
 
 label, select, input, button {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 button {
   background-color: #ff5722;
   color: #fff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19;
 }
 
 .remove-course {
   color: #dc3545;
-  border: none;
   background: none;
+  border: none;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .remove-course:hover {
-  text-decoration: underline;
+  color: #c82333;
 }
 
 .reset-button {
@@ -67,52 +81,22 @@ button {
 .summary {
   background-color: #f0f0f0;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-top: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .fade-in {
   animation: fade-in 0.5s ease-in-out;
 }
-
-/* Mobile-first responsive styles */
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 14px; /* Adjust font size for mobile */
-  }
-
-  .calculator {
-    padding: 10px; /* Decrease padding for smaller screens */
-    max-width: 100%; /* Allow calculator to take full width */
-  }
-
-  label, select, input, button {
-    margin-bottom: 8px; /* Reduce margin for better spacing */
-  }
-
-  button {
-    padding: 6px 12px; /* Adjust button padding */
-  }
-}
-
-/* Larger screens */
-@media screen and (min-width: 601px) {
-  body {
-    font-size: 16px; /* Reset font size for larger screens */
-  }
-
-  .calculator {
-    padding: 20px; /* Restore padding for larger screens */
-  }
-}
-
